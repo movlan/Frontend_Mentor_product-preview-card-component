@@ -1,0 +1,147 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+	--color-primary-dark: hsl(158, 36%, 37%);
+	--color-primary-light: hsl(30, 38%, 92%);
+	--color-neutral-dark: hsl(212, 21%, 14%);
+	--color-neutral-medium: hsl(228, 12%, 48%);
+	--color-neutral-light: hsl(0, 0%, 100%);
+	--font-fraunces: 'Fraunces', serif;
+	--font-montserrat: 'Montserrat', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: var(--color-primary-light);
+	font-family: var(--font-montserrat);
+}
+
+.card {
+	width: 60rem;
+	height: 45rem;
+	margin: 17.5rem auto 0;
+	background-color: var(--color-neutral-light);
+	border-radius: 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.card-image,
+.card-content {
+	flex: 0 0 50%;
+}
+
+.card-image {
+	background-image: url(./images/image-product-desktop.jpg);
+	background-size: contain;
+	border-radius: 1rem 0 0 1rem;
+}
+
+.card-content {
+	padding: 3.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.item-category {
+	color: var(--color-neutral-medium);
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: 0.5rem;
+}
+
+.item-title {
+	font-family: var(--font-fraunces);
+	font-size: 3rem;
+	line-height: 3rem;
+	color: var(--color-neutral-dark);
+}
+
+.item-description {
+	color: var(--color-neutral-medium);
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+}
+
+.item-price {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.item-price-new {
+	color: var(--color-primary-dark);
+	font-family: var(--font-fraunces);
+	font-size: 3rem;
+}
+
+.item-price-old {
+	margin-left: 2rem;
+	color: var(--color-neutral-medium);
+	font-size: 1.4rem;
+	text-decoration: line-through;
+}
+
+.item-action {
+}
+
+.btn {
+	height: 4.8rem;
+	width: 100%;
+	border: none;
+	background-color: var(--color-primary-dark);
+	color: var(--color-neutral-light);
+	font-weight: 700;
+	border-radius: 1rem;
+}
