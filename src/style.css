@@ -129,9 +129,6 @@ body {
 	text-decoration: line-through;
 }
 
-.item-action {
-}
-
 .btn {
 	height: 48px;
 	width: 100%;
@@ -140,4 +137,7 @@ body {
 	color: var(--color-neutral-light);
 	font-weight: 700;
 	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
