@@ -56,21 +56,17 @@ The designs were created to the following widths:
 	box-sizing: border-box;
 }
 
-html {
-	font-size: 62.5%;
-}
-
 body {
 	background-color: var(--color-primary-light);
 	font-family: var(--font-montserrat);
 }
 
 .card {
-	width: 60rem;
-	height: 45rem;
-	margin: 17.5rem auto 0;
+	width: 600px;
+	height: 450px;
+	margin: 175px auto 0;
 	background-color: var(--color-neutral-light);
-	border-radius: 1rem;
+	border-radius: 10px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -84,11 +80,11 @@ body {
 .card-image {
 	background-image: url(./images/image-product-desktop.jpg);
 	background-size: contain;
-	border-radius: 1rem 0 0 1rem;
+	border-radius: 10px 0 0 10px;
 }
 
 .card-content {
-	padding: 3.2rem;
+	padding: 32px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -97,21 +93,21 @@ body {
 .item-category {
 	color: var(--color-neutral-medium);
 	text-transform: uppercase;
-	font-size: 1.2rem;
-	letter-spacing: 0.5rem;
+	font-size: 12px;
+	letter-spacing: 5px;
 }
 
 .item-title {
 	font-family: var(--font-fraunces);
-	font-size: 3rem;
-	line-height: 3rem;
+	font-size: 30px;
+	line-height: 30px;
 	color: var(--color-neutral-dark);
 }
 
 .item-description {
 	color: var(--color-neutral-medium);
-	font-size: 1.4rem;
-	line-height: 2.4rem;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .item-price {
@@ -123,13 +119,13 @@ body {
 .item-price-new {
 	color: var(--color-primary-dark);
 	font-family: var(--font-fraunces);
-	font-size: 3rem;
+	font-size: 30px;
 }
 
 .item-price-old {
-	margin-left: 2rem;
+	margin-left: 20px;
 	color: var(--color-neutral-medium);
-	font-size: 1.4rem;
+	font-size: 14px;
 	text-decoration: line-through;
 }
 
@@ -137,11 +133,11 @@ body {
 }
 
 .btn {
-	height: 4.8rem;
+	height: 48px;
 	width: 100%;
 	border: none;
 	background-color: var(--color-primary-dark);
 	color: var(--color-neutral-light);
 	font-weight: 700;
-	border-radius: 1rem;
+	border-radius: 10px;
 }
